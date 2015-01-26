@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <script src='https://cdn.firebase.com/js/client/2.0.4/firebase.js'></script>
 </head>
 <body>
   <div class="container">
@@ -16,45 +17,50 @@
         <a href="https://twitter.com/aberatnofsky" class="twitter-follow-button" data-show-count="false" data-size="large" data-dnt="true">Follow @aberatnofsky</a>
         <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
         </p>
-        <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Check out my SLOGs!</button>
-        <div id="demo" class="collapse">
-        <h2>SLOG #1</h2>
+        </div>
+
+        <h1>SLOG #1</h1>
         <p>
         This is where my first SLOG will be.
         </p>
-        <div id="disqus_thread"></div>
-        <script type="text/javascript">
-        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-        var disqus_shortname = 'aberatnofsky'; // required: replace example with your forum shortname
+        <br>
 
-        /* * * DON'T EDIT BELOW THIS LINE * * */
-        (function() {
-          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-        })();
+        <div class='well well-lg'>
+        <h3>Say something!</h3>
+        <div class='row'>
+        <div class='col-xs-6 col-md-4'>
+        <input type='text' class='form-control' id='nameInput' placeholder='Name'>
+        </div>
+        <div class='col-xs-12 col-sm-6 col-md-8'>
+        <input type='text' class='form-control' id='commentInput' placeholder='Comment'>
+        <br>
+        </div>
+        </div>
+        <div id='messagesDiv'></div>
+        </div>
+
+        <script>
+        var myDataRef = new Firebase('https://slog-comments.firebaseio.com/');
+        $('#commentInput').keypress(function (e) {
+          if (e.keyCode == 13) {
+            var name = $('#nameInput').val();
+            var text = $('#commentInput').val();
+            myDataRef.push({name: name, text: text});
+            $('#commentInput').val('');
+          }
+        });
+        myDataRef.on('child_added', function(snapshot) {
+          var message = snapshot.val();
+          displayChatMessage(message.name, message.text);
+        });
+        function displayChatMessage(name, text) {
+          $('<div/>').text(text).prepend($('<strong/>').text(name+': ')).appendTo($('#messagesDiv'));
+          $('#messagesDiv')[0].scrollTop = $('#messagesDiv')[0].scrollHeight;
+        };
         </script>
-        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-      </div>
-    </div>
-    <div class="container">
-      <div class="col-md-4">
-        <h3>Column 1</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-      </div>
-      <div class="col-md-4">
-        <h3>Column 2</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-      </div>
-      <div class="col-md-4">
-        <h3>Column 3</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+
       </div>
     </div>
   </div>
-</div>
 </body>
 </html>
