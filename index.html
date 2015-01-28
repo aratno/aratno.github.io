@@ -11,9 +11,9 @@
 
   <style>
   .container{
-          max-width: 970px;
-          font-size: 110%;
-      }
+    max-width: 970px;
+    font-size: 110%;
+  }
   </style>
 
 </head>
@@ -34,8 +34,7 @@
         </p>
         <p>
         &nbsp;The privilege of accessing the expanse of all human knowledge in the comfort of one’s pajamas comes with but one constraint: literacy. In order to withdraw any significance from the archives, one must be able to read and write. For most information online, the format of communication is the written word, and with good reason. Writing is timeless and objective in a way personified spoken word and music isn’t. Geeks should write because it gives them an opportunity to edit, revise and reconstruct until what they write becomes what they mean. It gives them the opportunity to participate and contribute to their larger community of geeks. Verlyn Klinkenborg, a favorite writer of mine, wrote:
-        <p>
-        </p>
+        <br>
         <p>
         <blockquote>
         If you could look through the spaces between the sentences,<br>
@@ -55,29 +54,42 @@
         <br>
 
         <div class='well well-lg' style='padding-top: 0px'>
-        <h3>Say something!</h3>
-        <div class='row'>
-        <div class='col-xs-6 col-md-4'>
-        <input type='text' class='form-control' id='nameInput' placeholder='Name'>
-        </div>
-        <div class='col-xs-12 col-sm-6 col-md-8'>
-        <input type='text' class='form-control' id='commentInput' placeholder='Comment'>
-        <br>
-        </div>
-        </div>
-        <div id='messagesDiv'></div>
-        </div>
-
-        <script>
-        var myDataRef = new Firebase('https://slog-comments.firebaseio.com/');
-        $('#commentInput').keypress(function (e) {
-          if (e.keyCode == 13) {
-            var name = $('#nameInput').val();
-            var text = $('#commentInput').val();
-            myDataRef.push({name: name, text: text});
-            $('#commentInput').val('');
-          }
-        });
+          <h3>Say something!</h3>
+          <div class='row'>
+            <div class='col-xs-6 col-md-4'>
+              <input type='text' class='form-control' id='nameInput' placeholder='Name'>
+            </div>
+            <div class='col-xs-12 col-sm-6 col-md-8'>
+              <div class='input-group'>
+                <input type='text' class='form-control' id='commentInput' placeholder='Comment'>
+                <span class="input-group-btn">
+                  <button class="btn btn-default" type="button" onclick='submitInput()'>Submit!</button>
+                </span>
+              </div>
+            </div>
+            <br>
+            <br>
+          </div>
+          <div id='messagesDiv'></div>
+          </div>
+          <script>
+            var myDataRef = new Firebase('https://slog-comments.firebaseio.com/');
+            function submitInput(){
+              var name = $('#nameInput').val();
+              var text = $('#commentInput').val();
+              if(name != '' && text != ''){
+                myDataRef.push({name: name, text: text});
+                $('#commentInput').val('')
+              }
+              else{
+                //
+              }
+            }
+            $('#commentInput').keypress(function (e) {
+              if (e.keyCode == 13) {
+                submitInput();
+              }
+            });
         myDataRef.on('child_added', function(snapshot) {
           var message = snapshot.val();
           displayChatMessage(message.name, message.text);
