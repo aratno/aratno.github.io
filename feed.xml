@@ -1,30 +1,209 @@
----
-layout: null
----
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>{{ site.title | xml_escape }}</title>
-    <description>{{ site.description | xml_escape }}</description>
-    <link>{{ site.url }}{{ site.baseurl }}/</link>
-    <atom:link href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" rel="self" type="application/rss+xml"/>
-    <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
-    <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
-    <generator>Jekyll v{{ jekyll.version }}</generator>
-    {% for post in site.posts limit:10 %}
+    <title>Abe Ratnofsky</title>
+    <description>I&#39;m from New York, studying in Toronto, and feeling my way through CS to figure out where I fit in. I&#39;m most captivated by technology as a cultural medium. Maybe I should have gone to art school.
+</description>
+    <link>http://aber.io/</link>
+    <atom:link href="http://aber.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Tue, 17 Mar 2015 23:05:33 -0400</pubDate>
+    <lastBuildDate>Tue, 17 Mar 2015 23:05:33 -0400</lastBuildDate>
+    <generator>Jekyll v2.5.3</generator>
+    
       <item>
-        <title>{{ post.title | xml_escape }}</title>
-        <description>{{ post.content | xml_escape }}</description>
-        <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
-        <link>{{ post.url | prepend: site.baseurl | prepend: site.url }}</link>
-        <guid isPermaLink="true">{{ post.url | prepend: site.baseurl | prepend: site.url }}</guid>
-        {% for tag in post.tags %}
-        <category>{{ tag | xml_escape }}</category>
-        {% endfor %}
-        {% for cat in post.categories %}
-        <category>{{ cat | xml_escape }}</category>
-        {% endfor %}
+        <title>sample article</title>
+        <description>&lt;p&gt;This is an article.&lt;/p&gt;
+
+&lt;p&gt;I can add all sorts of things.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;words likeasldk;jfa;lskdfj;alkjsdf&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;wow!&lt;/p&gt;
+
+&lt;p&gt;Chris! Dope!&lt;/p&gt;
+</description>
+        <pubDate>Mon, 16 Mar 2015 00:00:00 -0400</pubDate>
+        <link>http://aber.io/articles/sample-article-2</link>
+        <guid isPermaLink="true">http://aber.io/articles/sample-article-2</guid>
+        
+        <category>article</category>
+        
+        
       </item>
-    {% endfor %}
+    
+      <item>
+        <title>sample article</title>
+        <description>&lt;p&gt;This is an article.&lt;/p&gt;
+
+&lt;p&gt;I can add all sorts of things.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;words like this&lt;/em&gt;
+&lt;strong&gt;words like this&lt;/strong&gt;
+&lt;strong&gt;&lt;em&gt;words like this&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.aber.io&quot;&gt;links to things.&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;kasra&lt;/p&gt;
+
+&lt;p&gt;arkady and kasra&lt;/p&gt;
+</description>
+        <pubDate>Mon, 16 Mar 2015 00:00:00 -0400</pubDate>
+        <link>http://aber.io/articles/sample-article</link>
+        <guid isPermaLink="true">http://aber.io/articles/sample-article</guid>
+        
+        <category>article</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Welcome to Jekyll!</title>
+        <description>&lt;p&gt;You’ll find this post in your &lt;code&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+
+&lt;p&gt;To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
+
+&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;Tom&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints &amp;#39;Hi, Tom&amp;#39; to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://github.com/jekyll/jekyll-help&quot;&gt;Jekyll’s dedicated Help repository&lt;/a&gt;.&lt;/p&gt;
+
+</description>
+        <pubDate>Sat, 14 Mar 2015 11:27:04 -0400</pubDate>
+        <link>http://aber.io/jekyll/update/2015/03/14/welcome-to-jekyll.html</link>
+        <guid isPermaLink="true">http://aber.io/jekyll/update/2015/03/14/welcome-to-jekyll.html</guid>
+        
+        
+        <category>jekyll</category>
+        
+        <category>update</category>
+        
+      </item>
+    
+      <item>
+        <title>7: Impressions of Week 8</title>
+        <description>&lt;h3 id=&quot;slog-7-impressions-of-week-8&quot;&gt;&lt;code&gt;SLOG 7: Impressions of Week 8&lt;/code&gt;&lt;/h3&gt;
+</description>
+        <pubDate>Mon, 02 Mar 2015 00:00:00 -0500</pubDate>
+        <link>http://aber.io/slogs/7</link>
+        <guid isPermaLink="true">http://aber.io/slogs/7</guid>
+        
+        <category>slog</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>6: Impressions of Week 7</title>
+        <description>&lt;h3 id=&quot;slog-6-impressions-of-week-7&quot;&gt;&lt;code&gt;SLOG 6: Impressions of Week 7&lt;/code&gt;&lt;/h3&gt;
+
+&lt;p&gt;This week, we spoke about a specific type of tree: the linked list. Linked lists are interesting for a couple reasons. First of all, they are a cool new take on arrays. Second, they are unary trees.&lt;/p&gt;
+
+&lt;p&gt;There are two perspectives one can take when considering a linked list. The list can be thought of as iterative or as recursive. In the iterative case, each element points to its partner like a group of children blaming each other for a wrongdoing. The recursive definition is that the data of each node in the list includes reference to another list.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;The iterative perspective:&lt;/em&gt;
+[a] =&amp;gt; [b] =&amp;gt; [c] =&amp;gt; [d] =&amp;gt; None&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;The recursive perspective&lt;/em&gt;
+a = [b, c, d]
+b = [c, d]
+c = d
+d = None&lt;/p&gt;
+
+&lt;p&gt;At this point, I have little understanding of why one would use a linked list in preference to an array. If I think about a linked list as a decision tree for a world without free will, it makes a little bit of melancholy sense.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 23 Feb 2015 00:00:00 -0500</pubDate>
+        <link>http://aber.io/slogs/6</link>
+        <guid isPermaLink="true">http://aber.io/slogs/6</guid>
+        
+        <category>slog</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>4: Object Oriented Programming</title>
+        <description>&lt;h3 id=&quot;slog-4-object-oriented-programming&quot;&gt;&lt;code&gt;SLOG 4: Object Oriented Programming&lt;/code&gt;&lt;/h3&gt;
+
+&lt;p&gt;I frequently feel confronted by the many goals of computer science classes, and my participation in them. On one hand, I’m there to learn to “code” (which is an ambiguity I’ll explain in a later SLOG). This “coding” thing includes the structures and practices which promote readability and appeal to intuition, because programs are written to be read by others. On the other hand, I’m learning computer science to understand a greater ordeal: the mathematical abstractions of the world into data, and the manipulation of that data. There is no best way to go about this abstraction, as shown by the many &lt;a href=&quot;http://en.wikipedia.org/wiki/Programming_paradigm&quot;&gt;programming paradigms&lt;/a&gt; of varying complexity. After even a light skim of the page linked it becomes clear that converting the world into data by use of objects isn’t the only way to do it.&lt;/p&gt;
+
+&lt;p&gt;Once you learn about the object oriented paradigm, it doesn’t leave you. You see notebooks as objects with attributes &lt;code&gt;cover&lt;/code&gt;, &lt;code&gt;title&lt;/code&gt;, &lt;code&gt;pages&lt;/code&gt;, and &lt;code&gt;type&lt;/code&gt;, and methods &lt;code&gt;open()&lt;/code&gt;, &lt;code&gt;write_page()&lt;/code&gt;, and &lt;code&gt;close()&lt;/code&gt;. You see people as objects with attributes &lt;code&gt;name&lt;/code&gt;, &lt;code&gt;age&lt;/code&gt;, and &lt;code&gt;height&lt;/code&gt;, and methods &lt;code&gt;say()&lt;/code&gt;, &lt;code&gt;ask()&lt;/code&gt;, and &lt;code&gt;talk()&lt;/code&gt;. The paradigm organizes the things in the world into what they’re made up of (attributes) and what they do (methods).&lt;/p&gt;
+
+&lt;p&gt;But, by introducing the world in terms of Python and objects, we hold ourselves back. As an initiation to computer science, CSC148 should introduce the abundance of perspectives available, and an understanding of which perspectives are appropriate in solving certain problems.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 09 Feb 2015 00:00:00 -0500</pubDate>
+        <link>http://aber.io/slogs/4</link>
+        <guid isPermaLink="true">http://aber.io/slogs/4</guid>
+        
+        <category>slog</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>3: Recursion</title>
+        <description>&lt;h3 id=&quot;slog-3-recursion&quot;&gt;&lt;code&gt;SLOG 3: Recursion&lt;/code&gt;&lt;/h3&gt;
+
+&lt;p&gt;It’s come to the point in the semester when I lose my sense of horology. I think it’s week four. The theme of this week was recursion, and I found it to be lackluster. Recursion is not immediately a computer science topic. Recursion also exists in mathematics, where a function has some condition in which the function itself may be evaluated. Most of our examples were like this in practice. Unlike I would have hoped, most of the problems attempted to confuse the reader, as opposed to demonstrate to the reader the power of recursive functions. The attitude seemed to be more of “Recursive functions are confusing versions of iterative functions” as opposed to “Recursive functions let you solve multi-step problems until a given conclusive state is reached.” There was no emphasis on scope, stack overflow errors, memory access, or the other quirks of recursion.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 02 Feb 2015 00:00:00 -0500</pubDate>
+        <link>http://aber.io/slogs/3</link>
+        <guid isPermaLink="true">http://aber.io/slogs/3</guid>
+        
+        <category>slog</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>2: Languages &amp; History</title>
+        <description>&lt;h3 id=&quot;slog-2-languages--history&quot;&gt;&lt;code&gt;SLOG 2: Languages &amp;amp; History&lt;/code&gt;&lt;/h3&gt;
+
+&lt;p&gt;Although CS and programming classes are some of the most interesting classes I’ve taken, I have found that they consistently lack coverage of certain topics which I would find meaningful to my understanding of programming. The most notable of these features is a historical and contextual introduction to the development of a language. If I’m studying Python, I want to know why Python was developed. What gap in programming languages existed to motivate the development of an entirely new language? Java is a compiled language, Python is an interpreted language, and C is an imperative language all for their own purposes. In class, the only differences taught are syntactical, and a few different built in functions here and there.&lt;/p&gt;
+
+&lt;p&gt;If programming classes gave a better context for a language, such as why one over the other, what they excel at, and why they were introduced, I would gain a stronger understanding of the field. Hello World and similarly elementary programs such as our assignments can be coded in any language, which mystifies the role of language and the overarching role of computer science.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 26 Jan 2015 00:00:00 -0500</pubDate>
+        <link>http://aber.io/slogs/2</link>
+        <guid isPermaLink="true">http://aber.io/slogs/2</guid>
+        
+        <category>slog</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>1: Why Geeks Should Write</title>
+        <description>&lt;h3 id=&quot;slog-1-why-geeks-should-write&quot;&gt;&lt;code&gt;SLOG 1: Why Geeks Should Write&lt;/code&gt;&lt;/h3&gt;
+
+&lt;p&gt; Today, everyone is a geek in some way or another. Whether they geek out over fashion, insects, or programming, communities exist online for everyone to develop their interests. Being able to geek out like this is a luxury: anyone with internet access can learn what they want when they want it, anonymously and at their own pace.
+ The privilege of accessing the expanse of all human knowledge in the comfort of one’s pajamas comes with but one constraint: literacy. In order to withdraw any significance from the archives, one must be able to read and write. For most information online, the format of communication is the written word, and with good reason. Writing is timeless and objective in a way personified spoken word and music isn’t. Geeks should write because it gives them an opportunity to edit, revise and reconstruct until what they write becomes what they mean. It gives them the opportunity to participate and contribute to their larger community of geeks. Verlyn Klinkenborg, a favorite writer of mine, wrote: &lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;If you could look through the spaces between the sentences,&lt;br /&gt;
+Through the door into the writing room, into that writer’s head,&lt;br /&gt;
+You’d see that every word was different once&lt;br /&gt;
+And that the writer was contemplating&lt;br /&gt;
+An incalculable number of differences,&lt;br /&gt;
+Feeling her way among the alternatives that presented themselves,&lt;br /&gt;
+Until settling upon words that were finally written down,&lt;br /&gt;
+Then revised over and over again –&lt;br /&gt;
+Before they were printed, published, reprinted in anthologies,&lt;br /&gt;
+And treated as though they’d been carved in stone.&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+        <pubDate>Mon, 19 Jan 2015 00:00:00 -0500</pubDate>
+        <link>http://aber.io/slogs/1</link>
+        <guid isPermaLink="true">http://aber.io/slogs/1</guid>
+        
+        <category>slog</category>
+        
+        
+      </item>
+    
   </channel>
 </rss>
