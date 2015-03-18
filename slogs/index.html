@@ -1,0 +1,83 @@
+---
+layout: default
+---
+
+<div class="home">
+  <div class="row">
+    <div class="six columns">
+      <h5>slogs</h5>
+      <p>i study cs at the university of toronto.<br>for certain classes, we are supposed to keep a "courSe bLOG" of what we learn and what we think of it.<br>most students use something like blogger.<br> i tried to get a little weird with it.</p>
+      {% for post in site.posts %}
+      {% if post.tags.first == "slog" %} <!-- Look out for slogs -->
+      <small>{{ post.date | date: "%m/%d" }}: </small><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      <br>
+      {% endif %}
+      {% endfor %}
+    </div>
+    <div id="slog-comments" class="six columns">
+      <h5>comments</h5>
+      <div id='messagesDiv'></div>
+      <div id='hiddenMessagesDiv'></div>
+      <br>
+      <button class="twelve columns" id="unabridge-button">show all comments</button>
+      <button class="twelve columns" id="abridge-button">show fewer comments</button>
+      <div id="submit-comment">
+        <hr> <!-- Replace with button -->
+        <b>leave a comment:</b>
+        <br>
+        <div class="row">
+          <input type='text' id='nameInput' class="six columns" placeholder='Name'>
+          <input type='text' id='messageInput' class="six columns" placeholder='Message'>
+        </div>
+      </div>
+      <script>
+      $("#hiddenMessagesDiv").hide();
+      $("#abridge-button").hide();
+      var myDataRef = new Firebase('https://slog-comments.firebaseio.com/');
+      var count = 0;
+      var limit = 5; //Number of comments to be displayed
+      $("#unabridge-button").click(function(){
+        //Replace button with all hidden comments
+        $("#unabridge-button").hide();
+        $("#hiddenMessagesDiv").show();
+        $("#abridge-button").show();
+      });
+      $("#abridge-button").click(function(){
+        //Replace contents with button
+        $("#abridge-button").hide();
+        $("#hiddenMessagesDiv").hide();
+        $("#unabridge-button").show();
+      });
+      $('#messageInput').keypress(function (e) {
+        if (e.keyCode == 13) {
+          submitComment();
+        }
+      });
+      myDataRef.on('child_added', function(snapshot) {
+        var message = snapshot.val();
+        if(count < limit){
+          displayChatMessage(message.name, message.text);
+          count += 1;
+        }
+        else{
+          storeChatMessage(message.name, message.text);
+        }
+      });
+      function submitComment(){
+        var name = $('#nameInput').val();
+        var text = $('#messageInput').val();
+        myDataRef.push({name: name, text: text});
+        $('#messageInput').val('');
+      }
+      function displayChatMessage(name, text) {
+        $('<div class="comment"/>').text(text).prepend($('<b/>').text(name+': ')).appendTo($('#messagesDiv'));
+        $('#messagesDiv')[0].scrollTop = $('#messagesDiv')[0].scrollHeight;
+      };
+      function storeChatMessage(name, text) {
+        $('<div class="comment"/>').text(text).prepend($('<b/>').text(name+': ')).appendTo($('#hiddenMessagesDiv'));
+        $('#hiddenMessagesDiv')[0].scrollTop = $('#hiddenMessagesDiv')[0].scrollHeight;
+      };
+      </script>
+    </div>
+  </div>
+</div>

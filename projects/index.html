@@ -1,0 +1,12 @@
+---
+layout: default
+---
+
+<div class="home">
+  <h5>projects</h5>
+  {% for post in site.posts %}
+  {% if post.tags.first == "project" %} <!-- Look out for projects -->
+  <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>: {{ post.date | date: "%b %-d, %Y" }}
+  {% endif %}
+  {% endfor %}
+</div>

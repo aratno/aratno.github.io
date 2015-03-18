@@ -1,96 +1,26 @@
-<!DOCTYPE html>
-<body>
+---
+layout: default
+---
 
-<head>
-  <title>Abe Ratnofsky</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="style.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-  <script src='https://cdn.firebase.com/js/client/2.0.4/firebase.js'></script>
-</head>
-
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="./index.html">Abe Ratnofsky</a>
-    </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li><a href="./projects.html">Projects<span class="sr-only">(current)</span></a></li>
-        <li><a href="./stream.html">Stream</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Academics<span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="./academics.html#CSC148">CSC148</a></li>
-            <li><a href="./academics.html#CSC165">CSC165</a></li>
-            <li><a href="./academics.html#ARC132">ARC132</a></li>
-            <li><a href="./academics.html#GER100">GER100</a></li>
-            <li class="divider"></li>
-            <li><a href="./academics.html#SLOGS">SLOGS</a></li>
-            <li class="divider"></li>
-            <li><a href="./academics.html">Past Education</a></li>
-          </ul>
-        </li>
-      </ul>
-      <!--
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="./me.html">Me</a></li>
-      </ul>
-    --> <!--Disable ./me.html until authentication is sorted out-->
-  </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
-<div class="container">
-  <div class="jumbotron">
-    <h1>Hello!</h1>
-    <p >My name is <strong>Abe Ratnofsky</strong> and I’m a university student from New York City, now living in Toronto. I’m interested in all sorts of projects, from <span class="tagged" id="proprietary">passive ping-pong point detectors</span> to <span class="tagged" id="proprietary">digital frameworks for educational institutions</span>. Whatever you’re working on, I’d love to talk about it.</p>
-  </div>
+<div class="home">
   <div class="row">
-    <div class="col-md-4">
-      <div class="panel panel-default">
-        <div class="panel-body landing-panel">
-          <p><h1><span class="glyphicon glyphicon-road" aria-hidden="true"></span><br>Check out what I’m up to.</h1>
-I try to keep my interests public. From articles I’m reading on <span class="tagged" id="pocket">Pocket</span> to music I’m listening to on <span class="tagged" id="soundcloud">SoundCloud</span>, the content I consume online is public on my <span class="tagged" id="proprietary">Stream</span>.</p>
-        </div>
-      </div>
+    <div class="six columns">
+      <span class="section-header"><h5><a href="/slogs">slogs</a></h5></span>
+      {% for post in site.posts %}
+      {% if post.tags.first == "slog" %} <!-- Look out for slogs -->
+      <small>{{ post.date | date: "%m/%d" }}: </small><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      <br>
+      {% endif %}
+      {% endfor %}
     </div>
-    <div class="col-md-4">
-      <div class="panel panel-default">
-        <div class="panel-body landing-panel">
-          <p><h1><span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span><br>See the work I’ve done.</h1>
-I’ve done branding, logos, and other graphics for a while but I’m now making the move to web design. You should probably just check my <span class="tagged" id="proprietary">portfolio</span>. There's some cool stuff in there.</p>
-        </div>
-      </div>
+    <div class="six columns">
+      <span class="section-header"><h5><a href="/me">me</a></h5></span>
+      <!-- Insert code from /me/index.html -->
+      <p>
+        my name is abe ratnofsky <br>
+        i live in <strike>new york</strike> toronto. <br>
+        it's pretty <strike>cold</strike> nice here.
+      </p>
     </div>
-    <div class="col-md-4">
-      <div class="panel panel-default">
-        <div class="panel-body landing-panel">
-          <p><h1><span class="glyphicon glyphicon-bullhorn" aria-hidden="true"></span><br>Give me a shout!</h1>
-Whether you just want to talk or need some help with a project, I’m always down to chat. Send me an email at <span class="tagged" id="proprietary">aratno@gmail.com</span> or hit me up on Telegram at <span class="tagged" id="telegram">telegram.me/aratno</span>.</p>
-        </div>
-      </div>
-    </div>
-  </div> <!-- End of row -->
-</div> <!-- End of container -->
-<script> /* Move this to another file later */
-$(document).ready(function(){
-  $(".tagged").click(function(){
-    /*window.open("#");*/ /* For opening link in new window */
-    window.location = "#"; /* For redirecting in current window */
-  });
-});
-</script>
-</body>
-</html>
+  </div>
+</div>
