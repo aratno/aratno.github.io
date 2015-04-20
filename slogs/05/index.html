@@ -114,75 +114,33 @@
 
     <div class="page-content">
       <div class="container">
-        <div class="home">
-  <div class="row">
-    <div class="six columns">
-      <span class="section-header"><h5><a href="/slogs">slogs</a></h5></span>
-      
-       <!-- Look out for slogs -->
-      <small>03/30: </small><a class="post-link" href="/slogs/10">10 | Last Impressions</a>
-      <br>
-      
-      
-       <!-- Look out for slogs -->
-      <small>03/23: </small><a class="post-link" href="/slogs/09">09 | Revisiting</a>
-      <br>
-      
-      
-       <!-- Look out for slogs -->
-      <small>03/16: </small><a class="post-link" href="/slogs/08">08 | Week 9</a>
-      <br>
-      
-      
-      
-      
-       <!-- Look out for slogs -->
-      <small>03/09: </small><a class="post-link" href="/slogs/07">07 | Week 8</a>
-      <br>
-      
-      
-       <!-- Look out for slogs -->
-      <small>03/02: </small><a class="post-link" href="/slogs/06">06 | Week 7</a>
-      <br>
-      
-      
-       <!-- Look out for slogs -->
-      <small>02/23: </small><a class="post-link" href="/slogs/05">05 | Recursion</a>
-      <br>
-      
-      
-       <!-- Look out for slogs -->
-      <small>02/09: </small><a class="post-link" href="/slogs/04">04 | Object Oriented Programming</a>
-      <br>
-      
-      
-       <!-- Look out for slogs -->
-      <small>02/02: </small><a class="post-link" href="/slogs/03">03 | Recursion</a>
-      <br>
-      
-      
-       <!-- Look out for slogs -->
-      <small>01/26: </small><a class="post-link" href="/slogs/02">02 | Languages & History</a>
-      <br>
-      
-      
-       <!-- Look out for slogs -->
-      <small>01/19: </small><a class="post-link" href="/slogs/01">01 | Why Geeks Should Write</a>
-      <br>
-      
-      
-    </div>
-    <div class="six columns">
-      <span class="section-header"><h5><a href="/me">me</a></h5></span>
-      <!-- Insert code from /me/index.html -->
-      <p>
-        my name is abe ratnofsky <br>
-        i live in <strike>new york</strike> toronto. <br>
-        it's pretty <strike>cold</strike> nice here.
-      </p>
-    </div>
-  </div>
-</div>
+        <h1 id="slog-5-recursion">SLOG 5: Recursion</h1>
+
+<p>This week, we discussed recursion and its applications in game design. The concept was interesting: games develop tree-like fractal structures as they are played. Suppose a chess board, for example. Each move leads the game to a new position which requires the same mental operations as the last. In each position, the player determines the best possible move by predicting the likelihood of winning a later position. Of course, there’s more to it than that. In a game like chess between human players, there are far too many possible moves, and each move has value which is hard to compute. The case is very different in a game like Subtract Squares, or Tippy, for example. In games like these, the player can ponder each outcome of each move, and generate a tree of possible game states, based on the moves of each player. For example, if the target was 6 in a game of Subtract Squares the tree would look like this:</p>
+
+<pre>
+6: 5, 2
+	5: 4, 1
+		4: 3, 0
+			3: 2
+				2: 1
+					1: 0
+		1: 0
+	2: 1
+		1: 0
+</pre>
+
+<p>Using this tree, a player can see if they have the opportunity to force a win. For numbers above 10, it becomes pretty hard to do in your head. But a tree like this is perfect for a computer to run through, which lead us into our next topic, tree traversal.</p>
+
+<p>Trees in mathematics are abstractions of real-world hierarchical phenomenon, such as family lineages or decision trees, as we have explored in class. A tree is a generalization of a graph without cycles, so linked-lists and binary trees are logically subsets of trees (with branching factors of 1 and 2 respectively). Because trees do not have cycles (by definition), there are a few ways to get the data on each node by following the edges. The main traversal methods for binary trees are:</p>
+
+<ul>
+  <li><em>Pre-order Traversal</em>: A node is read, then its left child is read, then its right child is read.</li>
+  <li><em>Post-order Traversal</em>: A node’s left child is read, then its right child is read, then its data is read.</li>
+  <li><em>In-order Traversal</em>: A node’s left child is read, then its data is read, then its right child is read.</li>
+</ul>
+
+<p>Trees are inherently recursive objects (like a fern, each subtree is a tree itself, unless it is a leaf) traversing the data of a tree is a recursive exercise. When a node is approached, the traversal method is repeated and the entire tree is eventually read.</p>
 
       </div>
     </div>

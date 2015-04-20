@@ -6,52 +6,134 @@
 </description>
     <link>http://aber.io/</link>
     <atom:link href="http://aber.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 24 Mar 2015 15:00:33 -0400</pubDate>
-    <lastBuildDate>Tue, 24 Mar 2015 15:00:33 -0400</lastBuildDate>
+    <pubDate>Sun, 19 Apr 2015 23:33:37 -0400</pubDate>
+    <lastBuildDate>Sun, 19 Apr 2015 23:33:37 -0400</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
-        <title>sample article</title>
-        <description>&lt;p&gt;This is an article.&lt;/p&gt;
+        <title>10 | Last Impressions</title>
+        <description>&lt;h1 id=&quot;slog-10-last-impressions&quot;&gt;SLOG 10: Last Impressions&lt;/h1&gt;
 
-&lt;p&gt;I can add all sorts of things.&lt;/p&gt;
+&lt;p&gt;Here we are, at the strange niche between the end of a course and the final exam.&lt;/p&gt;
 
-&lt;p&gt;&lt;em&gt;words likeasldk;jfa;lskdfj;alkjsdf&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;In conclusion, I found CSC148 to be a good class. I had a few issues with the curriculum; I would have liked if we discussed more data structures (such as directed and cyclic graphs). Given the curriculum, I found the assignments to be very good applications of concepts presented in class. Although I slightly misunderstood the class design in the first assignment, the next two were straightforward and required elegant solutions. The openness of the third assignment was very appropriate too, I liked the theoretical option (analyzing runtimes) and applicable option (implementing optimizations). It would have been nice if we spoke about optimizations when we spoke about the structures themselves (in the context of tree traversal).&lt;/p&gt;
 
-&lt;p&gt;wow!&lt;/p&gt;
+&lt;p&gt;All in all, I think the curriculum of CSC148 will make more sense once I have completed more advanced classes. Most of my qualms with the class are related to my previous CS classwork.&lt;/p&gt;
 
-&lt;p&gt;Chris! Dope!&lt;/p&gt;
+&lt;p&gt;One major issue I have had with CSC148, however, is the SLOG. Even if the SLOG grading schedule was made clear, I have still found absolutely no value in writing them. I do believe CS classes are benefitted by reflection, but diary entries are hardly beneficial. Maybe asking students to do a small, open-ended project with the concepts discussed in class would be a more effective use of that time.&lt;/p&gt;
 </description>
-        <pubDate>Mon, 16 Mar 2015 00:00:00 -0400</pubDate>
-        <link>http://aber.io/articles/sample-article-2</link>
-        <guid isPermaLink="true">http://aber.io/articles/sample-article-2</guid>
+        <pubDate>Mon, 30 Mar 2015 00:00:00 -0400</pubDate>
+        <link>http://aber.io/slogs/10</link>
+        <guid isPermaLink="true">http://aber.io/slogs/10</guid>
         
-        <category>article</category>
+        <category>slog</category>
         
         
       </item>
     
       <item>
-        <title>sample article</title>
-        <description>&lt;p&gt;This is an article.&lt;/p&gt;
+        <title>09 | Revisiting</title>
+        <description>&lt;h1 id=&quot;slog-9-revisit-an-old-slog&quot;&gt;SLOG 9: Revisit an old SLOG!&lt;/h1&gt;
 
-&lt;p&gt;I can add all sorts of things.&lt;/p&gt;
+&lt;p&gt;When I first read this prompt, I read through all my previous SLOGs and put an &lt;strong&gt;EDIT&lt;/strong&gt; note if I had new thoughts on the topic, but for a formal SLOG about reflection, I think I’ll write about Week 4, when we were asked to write about our first impressions of the class.&lt;/p&gt;
 
-&lt;p&gt;&lt;em&gt;words like this&lt;/em&gt;
-&lt;strong&gt;words like this&lt;/strong&gt;
-&lt;strong&gt;&lt;em&gt;words like this&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;As someone who did not take CSC108, I felt like I was at a strange disadvantage in the class. I felt familiar with all the concepts that were introduced, but from the wrong background, which made me feel more confused that if I were completely ignorant. It was my first time learning Python, and my main struggles had to do with the existence of Python itself, where it stood in the tangled web of programming languages.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://www.aber.io&quot;&gt;links to things.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I realized later in the class that Python had little to do with the concepts taught. The structures were universal, and Python was simply a way to access them.&lt;/p&gt;
 
-&lt;p&gt;kasra&lt;/p&gt;
+&lt;p&gt;Then I started reading Michael Sipser’s &lt;em&gt;Introduction to the Theory of Computation&lt;/em&gt;, which is the textbook for CSC363 (at least it was in 2010). I found this book stumbling through the book store, started reading it, and was quickly amazed by the number of general concepts (language-independent) that weren’t introduced in this class, but would have been helpful. For example, we didn’t spend any time on directed, or cyclic graphs, even though we did a small subset of graphs.&lt;/p&gt;
 
-&lt;p&gt;arkady and kasra&lt;/p&gt;
+&lt;p&gt;In summary, I agree with my former beliefs, but to a different degree. While before, my main concern was “Why Python?”, my current concern is “Why just these structures?”.&lt;/p&gt;
+
+&lt;p&gt;As for my classmate Kasra, he feels like not taking CSC108 was a good idea because it is so introductory. In a way, I agree. My previous experience with computer science would have made CSC108 too easy, and I’m glad I jumped into a more challenging course. On the contrary, I think my previous CS coursework made the first few weeks of material in CSC148 confusing in an entirely different way.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 23 Mar 2015 00:00:00 -0400</pubDate>
+        <link>http://aber.io/slogs/09</link>
+        <guid isPermaLink="true">http://aber.io/slogs/09</guid>
+        
+        <category>slog</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>08 | Week 9</title>
+        <description>&lt;h1 id=&quot;slog-8-week-9&quot;&gt;SLOG 8: Week 9&lt;/h1&gt;
+
+&lt;p&gt;This week we learned about manipulating Binary Search Trees (BSTs). BSTs are Binary Trees in which the children are organized such that a node’s left child value is less than the node’s value and the node’s right child value is more than the node’s value. If a BST is flattened into a list using in in-order traversal, the list will be in order.&lt;/p&gt;
+
+&lt;p&gt;Below is an example for a BST:&lt;/p&gt;
+&lt;pre&gt;
+         10
+       /    \
+      8      13
+     / \    /  \
+    1   9  11  16
+&lt;/pre&gt;
+&lt;p&gt;After the in-order traversal, the list would become:&lt;/p&gt;
+&lt;pre&gt;
+[1, 8, 9, 10, 11, 13, 16]
+&lt;/pre&gt;
+
+&lt;p&gt;which has ascending sorted values.&lt;/p&gt;
+
+&lt;p&gt;We also talked about inserting and deleting nodes into BSTs, which is more complicated than it seems because BSTs have a rigorous structure which needs to be upheld even when manipulating the data underlying it.&lt;/p&gt;
+
+&lt;p&gt;Insert and delete are fundamental methods to BSTs, so I will write about them here.&lt;/p&gt;
+
+&lt;p&gt;Suppose we had the tree above, and we wanted to insert the value &lt;strong&gt;12&lt;/strong&gt; into it. Here are the steps we would follow:
+1. Start at the node value, 10.
+2. 12 &amp;gt; 10, so check the right child of the node.
+## 12 &amp;lt; 13, so check the left child of the node.
+4. We are now at the leaf node with a value of 11.
+5. Copy the subtree (here just a leaf node) with 11 at the root and store it in a temp variable.
+6. Replace the subtree with our value, 12.
+7. Because the 11 subtree is less than 12, place the 11 subtree (in temp) as the left child of our new 12 node.&lt;/p&gt;
+
+&lt;p&gt;Here is our new tree:&lt;/p&gt;
+&lt;pre&gt;
+          10
+       /      \
+      8        13
+    /  \      /  \
+   1    9   12    16
+           /
+         11
+&lt;/pre&gt;
+
+&lt;p&gt;And inversely, here are the steps to delete the node with the value &lt;strong&gt;13&lt;/strong&gt;:
+1. First, navigate to the 13 node.
+2. Store the left and right children of the 13 node in &lt;code&gt;left_child&lt;/code&gt; and &lt;code&gt;right_child&lt;/code&gt;, respectively. In this case, &lt;code&gt;left_child&lt;/code&gt; would be [11, 12] and &lt;code&gt;right_child&lt;/code&gt; would be [16].
+3. Delete the 13 subtree.
+4. Let the right child of the node above the deleted node (in this case the 10 node) be &lt;code&gt;left_child&lt;/code&gt;.
+5. Now parse the tree for where to place &lt;code&gt;right_child&lt;/code&gt; (using the insert method mentioned before).&lt;/p&gt;
+
+&lt;p&gt;One important thing to remember about BSTs is that they are not unique representations of a list. For example, the list [1, 2, 3, 4, 5] can be represented as:&lt;/p&gt;
+
+&lt;p&gt;1
+ \
+  2
+   \
+    3
+     \
+      4
+       \
+        5&lt;/p&gt;
+
+&lt;p&gt;Or it can be represented as:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;   3
+ /   \
+2     4    /       \   1         5
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;For now, it is important to understand that these are both valid BSTs for our list, but one is more optimized than the other because it has a lesser height.&lt;/p&gt;
 </description>
         <pubDate>Mon, 16 Mar 2015 00:00:00 -0400</pubDate>
-        <link>http://aber.io/articles/sample-article</link>
-        <guid isPermaLink="true">http://aber.io/articles/sample-article</guid>
+        <link>http://aber.io/slogs/08</link>
+        <guid isPermaLink="true">http://aber.io/slogs/08</guid>
         
-        <category>article</category>
+        <category>slog</category>
         
         
       </item>
@@ -85,40 +167,28 @@
       </item>
     
       <item>
-        <title>7: Impressions of Week 8</title>
-        <description>&lt;h3 id=&quot;slog-7-impressions-of-week-8&quot;&gt;&lt;code&gt;SLOG 7: Impressions of Week 8&lt;/code&gt;&lt;/h3&gt;
-</description>
-        <pubDate>Mon, 02 Mar 2015 00:00:00 -0500</pubDate>
-        <link>http://aber.io/slogs/7</link>
-        <guid isPermaLink="true">http://aber.io/slogs/7</guid>
-        
-        <category>slog</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>6: Impressions of Week 7</title>
-        <description>&lt;h3 id=&quot;slog-6-impressions-of-week-7&quot;&gt;&lt;code&gt;SLOG 6: Impressions of Week 7&lt;/code&gt;&lt;/h3&gt;
+        <title>07 | Week 8</title>
+        <description>&lt;h1 id=&quot;slog-7-week-8&quot;&gt;SLOG 7: Week 8&lt;/h1&gt;
 
-&lt;p&gt;This week, we spoke about a specific type of tree: the linked list. Linked lists are interesting for a couple reasons. First of all, they are a cool new take on arrays. Second, they are unary trees.&lt;/p&gt;
+&lt;p&gt;This week we discussed linked lists, and how they sit between array and tree structures. They are a one dimensional collection of items, so each item has an “index”, and the length of the list is equal to the number of items in the list. They are also trees of arity 1, where each node has a maximum of one child. These two definitions correspond to the iterative and recursive ways to think about linked lists. Below are diagrams of each definition:&lt;/p&gt;
 
-&lt;p&gt;There are two perspectives one can take when considering a linked list. The list can be thought of as iterative or as recursive. In the iterative case, each element points to its partner like a group of children blaming each other for a wrongdoing. The recursive definition is that the data of each node in the list includes reference to another list.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;#The iterative perspective:
+[a] =&amp;gt; [b] =&amp;gt; [c] =&amp;gt; [d] =&amp;gt; None
 
-&lt;p&gt;&lt;em&gt;The iterative perspective:&lt;/em&gt;
-[a] =&amp;gt; [b] =&amp;gt; [c] =&amp;gt; [d] =&amp;gt; None&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;The recursive perspective&lt;/em&gt;
+#The recursive perspective
 a = [b, c, d]
 b = [c, d]
 c = d
-d = None&lt;/p&gt;
+d = None
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;At this point, I have little understanding of why one would use a linked list in preference to an array. If I think about a linked list as a decision tree for a world without free will, it makes a little bit of melancholy sense.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;EDIT&lt;/strong&gt;: After doing some reading on the C language, the value in linked lists becomes much more apparent to me. Thinking about primitive data types, it becomes clear that linked lists are much more barebones versions of lists, they contain two pieces of data, one of the type of your choice, and another that points to the next piece. It isn’t easy to make a collection simpler than that.&lt;/p&gt;
 </description>
-        <pubDate>Mon, 23 Feb 2015 00:00:00 -0500</pubDate>
-        <link>http://aber.io/slogs/6</link>
-        <guid isPermaLink="true">http://aber.io/slogs/6</guid>
+        <pubDate>Mon, 09 Mar 2015 00:00:00 -0400</pubDate>
+        <link>http://aber.io/slogs/07</link>
+        <guid isPermaLink="true">http://aber.io/slogs/07</guid>
         
         <category>slog</category>
         
@@ -126,8 +196,75 @@ d = None&lt;/p&gt;
       </item>
     
       <item>
-        <title>4: Object Oriented Programming</title>
-        <description>&lt;h3 id=&quot;slog-4-object-oriented-programming&quot;&gt;&lt;code&gt;SLOG 4: Object Oriented Programming&lt;/code&gt;&lt;/h3&gt;
+        <title>06 | Week 7</title>
+        <description>&lt;h1 id=&quot;slog-6-impressions-of-week-7&quot;&gt;SLOG 6: Impressions of Week 7&lt;/h1&gt;
+
+&lt;p&gt;For week 7 we discussed binary trees and Reverse Polish Notation.&lt;/p&gt;
+
+&lt;p&gt;Binary trees are trees with an arity of 2. Each node has at most two children. This rigidity in structure allows for a few cool functionalities, namely for sorting and traversal.&lt;/p&gt;
+
+&lt;p&gt;Because each node can have at most two children, the &lt;code&gt;children&lt;/code&gt; attribute of a binary tree is not a list of binary trees, but rather two separate fields for &lt;code&gt;left_child&lt;/code&gt; and &lt;code&gt;right_child&lt;/code&gt;. This way, a leaf node has both children as &lt;code&gt;None&lt;/code&gt;, rather than an empty list. This makes traversal slightly different, but nice in that it makes computation time more predictable given a tree of certain height.&lt;/p&gt;
+
+&lt;p&gt;To apply binary trees, there was a lab activity regarding Reverse Polish notation, an alternative to infix notation for arithmetic. RPN works as follows:&lt;/p&gt;
+
+&lt;p&gt;(+ 7 9) is equivalent to (7 + 9)
+(- + 7 9 3) is equivalent to (7 + 9 - 3)&lt;/p&gt;
+
+&lt;p&gt;As a summary, RPN works by moving the operator to the position before the arguments, as opposed to between them. This allows for long strings of arithmetic to be expressed without parentheses.&lt;/p&gt;
+
+&lt;p&gt;Binary trees are also vital for operations like binary sorting. Each node is organized so that its left child value is less than it, and its right child value is more than it. Binary trees are useful because they can reduce search time from O(n) to O(log n), with proper balancing, which will be discussed in the coming weeks.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 02 Mar 2015 00:00:00 -0500</pubDate>
+        <link>http://aber.io/slogs/06</link>
+        <guid isPermaLink="true">http://aber.io/slogs/06</guid>
+        
+        <category>slog</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>05 | Recursion</title>
+        <description>&lt;h1 id=&quot;slog-5-recursion&quot;&gt;SLOG 5: Recursion&lt;/h1&gt;
+
+&lt;p&gt;This week, we discussed recursion and its applications in game design. The concept was interesting: games develop tree-like fractal structures as they are played. Suppose a chess board, for example. Each move leads the game to a new position which requires the same mental operations as the last. In each position, the player determines the best possible move by predicting the likelihood of winning a later position. Of course, there’s more to it than that. In a game like chess between human players, there are far too many possible moves, and each move has value which is hard to compute. The case is very different in a game like Subtract Squares, or Tippy, for example. In games like these, the player can ponder each outcome of each move, and generate a tree of possible game states, based on the moves of each player. For example, if the target was 6 in a game of Subtract Squares the tree would look like this:&lt;/p&gt;
+
+&lt;pre&gt;
+6: 5, 2
+	5: 4, 1
+		4: 3, 0
+			3: 2
+				2: 1
+					1: 0
+		1: 0
+	2: 1
+		1: 0
+&lt;/pre&gt;
+
+&lt;p&gt;Using this tree, a player can see if they have the opportunity to force a win. For numbers above 10, it becomes pretty hard to do in your head. But a tree like this is perfect for a computer to run through, which lead us into our next topic, tree traversal.&lt;/p&gt;
+
+&lt;p&gt;Trees in mathematics are abstractions of real-world hierarchical phenomenon, such as family lineages or decision trees, as we have explored in class. A tree is a generalization of a graph without cycles, so linked-lists and binary trees are logically subsets of trees (with branching factors of 1 and 2 respectively). Because trees do not have cycles (by definition), there are a few ways to get the data on each node by following the edges. The main traversal methods for binary trees are:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;em&gt;Pre-order Traversal&lt;/em&gt;: A node is read, then its left child is read, then its right child is read.&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;Post-order Traversal&lt;/em&gt;: A node’s left child is read, then its right child is read, then its data is read.&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;In-order Traversal&lt;/em&gt;: A node’s left child is read, then its data is read, then its right child is read.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Trees are inherently recursive objects (like a fern, each subtree is a tree itself, unless it is a leaf) traversing the data of a tree is a recursive exercise. When a node is approached, the traversal method is repeated and the entire tree is eventually read.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 23 Feb 2015 00:00:00 -0500</pubDate>
+        <link>http://aber.io/slogs/05</link>
+        <guid isPermaLink="true">http://aber.io/slogs/05</guid>
+        
+        <category>slog</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>04 | Object Oriented Programming</title>
+        <description>&lt;h1 id=&quot;slog-4-object-oriented-programming&quot;&gt;SLOG 4: Object Oriented Programming&lt;/h1&gt;
 
 &lt;p&gt;I frequently feel confronted by the many goals of computer science classes, and my participation in them. On one hand, I’m there to learn to “code” (which is an ambiguity I’ll explain in a later SLOG). This “coding” thing includes the structures and practices which promote readability and appeal to intuition, because programs are written to be read by others. On the other hand, I’m learning computer science to understand a greater ordeal: the mathematical abstractions of the world into data, and the manipulation of that data. There is no best way to go about this abstraction, as shown by the many &lt;a href=&quot;http://en.wikipedia.org/wiki/Programming_paradigm&quot;&gt;programming paradigms&lt;/a&gt; of varying complexity. After even a light skim of the page linked it becomes clear that converting the world into data by use of objects isn’t the only way to do it.&lt;/p&gt;
 
@@ -136,8 +273,8 @@ d = None&lt;/p&gt;
 &lt;p&gt;But, by introducing the world in terms of Python and objects, we hold ourselves back. As an initiation to computer science, CSC148 should introduce the abundance of perspectives available, and an understanding of which perspectives are appropriate in solving certain problems.&lt;/p&gt;
 </description>
         <pubDate>Mon, 09 Feb 2015 00:00:00 -0500</pubDate>
-        <link>http://aber.io/slogs/4</link>
-        <guid isPermaLink="true">http://aber.io/slogs/4</guid>
+        <link>http://aber.io/slogs/04</link>
+        <guid isPermaLink="true">http://aber.io/slogs/04</guid>
         
         <category>slog</category>
         
@@ -145,14 +282,18 @@ d = None&lt;/p&gt;
       </item>
     
       <item>
-        <title>3: Recursion</title>
-        <description>&lt;h3 id=&quot;slog-3-recursion&quot;&gt;&lt;code&gt;SLOG 3: Recursion&lt;/code&gt;&lt;/h3&gt;
+        <title>03 | Recursion</title>
+        <description>&lt;h1 id=&quot;slog-3-recursion&quot;&gt;SLOG 3: Recursion&lt;/h1&gt;
 
 &lt;p&gt;It’s come to the point in the semester when I lose my sense of horology. I think it’s week four. The theme of this week was recursion, and I found it to be lackluster. Recursion is not immediately a computer science topic. Recursion also exists in mathematics, where a function has some condition in which the function itself may be evaluated. Most of our examples were like this in practice. Unlike I would have hoped, most of the problems attempted to confuse the reader, as opposed to demonstrate to the reader the power of recursive functions. The attitude seemed to be more of “Recursive functions are confusing versions of iterative functions” as opposed to “Recursive functions let you solve multi-step problems until a given conclusive state is reached.” There was no emphasis on scope, stack overflow errors, memory access, or the other quirks of recursion.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;EDIT&lt;/strong&gt;: After working on the last two assignments of the course, it became apparent to me that recursion is not a direct conversion of iteration, but an exercise in changing ones perspective on a function. I have found recursion to be much more powerful on data types such as trees and linked lists (which are recursive in nature) than on normal arrays (which are iterative by nature).&lt;/p&gt;
+
+&lt;p&gt;When I say “recursive &lt;em&gt;by nature&lt;/em&gt;” and “iterative &lt;em&gt;by nature&lt;/em&gt;” I really mean that some data types are fractal, and others are collective. For example, a tree is simply a node with a collection of trees as children, whereas a list is a collection of objects where each object has an index and it affords looping well. In understanding how data structures each afford their own method of traversal, I have gained a newfound appreciation for recursion which I had just found to be unnecessary and frustrating in the past.&lt;/p&gt;
 </description>
         <pubDate>Mon, 02 Feb 2015 00:00:00 -0500</pubDate>
-        <link>http://aber.io/slogs/3</link>
-        <guid isPermaLink="true">http://aber.io/slogs/3</guid>
+        <link>http://aber.io/slogs/03</link>
+        <guid isPermaLink="true">http://aber.io/slogs/03</guid>
         
         <category>slog</category>
         
@@ -160,45 +301,16 @@ d = None&lt;/p&gt;
       </item>
     
       <item>
-        <title>2: Languages &amp; History</title>
-        <description>&lt;h3 id=&quot;slog-2-languages--history&quot;&gt;&lt;code&gt;SLOG 2: Languages &amp;amp; History&lt;/code&gt;&lt;/h3&gt;
+        <title>02 | Languages &amp; History</title>
+        <description>&lt;h1 id=&quot;slog-2-languages--history&quot;&gt;SLOG 2: Languages &amp;amp; History&lt;/h1&gt;
 
 &lt;p&gt;Although CS and programming classes are some of the most interesting classes I’ve taken, I have found that they consistently lack coverage of certain topics which I would find meaningful to my understanding of programming. The most notable of these features is a historical and contextual introduction to the development of a language. If I’m studying Python, I want to know why Python was developed. What gap in programming languages existed to motivate the development of an entirely new language? Java is a compiled language, Python is an interpreted language, and C is an imperative language all for their own purposes. In class, the only differences taught are syntactical, and a few different built in functions here and there.&lt;/p&gt;
 
 &lt;p&gt;If programming classes gave a better context for a language, such as why one over the other, what they excel at, and why they were introduced, I would gain a stronger understanding of the field. Hello World and similarly elementary programs such as our assignments can be coded in any language, which mystifies the role of language and the overarching role of computer science.&lt;/p&gt;
 </description>
         <pubDate>Mon, 26 Jan 2015 00:00:00 -0500</pubDate>
-        <link>http://aber.io/slogs/2</link>
-        <guid isPermaLink="true">http://aber.io/slogs/2</guid>
-        
-        <category>slog</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>1: Why Geeks Should Write</title>
-        <description>&lt;h3 id=&quot;slog-1-why-geeks-should-write&quot;&gt;&lt;code&gt;SLOG 1: Why Geeks Should Write&lt;/code&gt;&lt;/h3&gt;
-
-&lt;p&gt; Today, everyone is a geek in some way or another. Whether they geek out over fashion, insects, or programming, communities exist online for everyone to develop their interests. Being able to geek out like this is a luxury: anyone with internet access can learn what they want when they want it, anonymously and at their own pace.
- The privilege of accessing the expanse of all human knowledge in the comfort of one’s pajamas comes with but one constraint: literacy. In order to withdraw any significance from the archives, one must be able to read and write. For most information online, the format of communication is the written word, and with good reason. Writing is timeless and objective in a way personified spoken word and music isn’t. Geeks should write because it gives them an opportunity to edit, revise and reconstruct until what they write becomes what they mean. It gives them the opportunity to participate and contribute to their larger community of geeks. Verlyn Klinkenborg, a favorite writer of mine, wrote: &lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;If you could look through the spaces between the sentences,&lt;br /&gt;
-Through the door into the writing room, into that writer’s head,&lt;br /&gt;
-You’d see that every word was different once&lt;br /&gt;
-And that the writer was contemplating&lt;br /&gt;
-An incalculable number of differences,&lt;br /&gt;
-Feeling her way among the alternatives that presented themselves,&lt;br /&gt;
-Until settling upon words that were finally written down,&lt;br /&gt;
-Then revised over and over again –&lt;br /&gt;
-Before they were printed, published, reprinted in anthologies,&lt;br /&gt;
-And treated as though they’d been carved in stone.&lt;/p&gt;
-&lt;/blockquote&gt;
-</description>
-        <pubDate>Mon, 19 Jan 2015 00:00:00 -0500</pubDate>
-        <link>http://aber.io/slogs/1</link>
-        <guid isPermaLink="true">http://aber.io/slogs/1</guid>
+        <link>http://aber.io/slogs/02</link>
+        <guid isPermaLink="true">http://aber.io/slogs/02</guid>
         
         <category>slog</category>
         

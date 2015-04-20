@@ -114,11 +114,22 @@
 
     <div class="page-content">
       <div class="container">
-        <h3 id="slog-2-languages--history"><code>SLOG 2: Languages &amp; History</code></h3>
+        <h1 id="slog-6-impressions-of-week-7">SLOG 6: Impressions of Week 7</h1>
 
-<p>Although CS and programming classes are some of the most interesting classes I’ve taken, I have found that they consistently lack coverage of certain topics which I would find meaningful to my understanding of programming. The most notable of these features is a historical and contextual introduction to the development of a language. If I’m studying Python, I want to know why Python was developed. What gap in programming languages existed to motivate the development of an entirely new language? Java is a compiled language, Python is an interpreted language, and C is an imperative language all for their own purposes. In class, the only differences taught are syntactical, and a few different built in functions here and there.</p>
+<p>For week 7 we discussed binary trees and Reverse Polish Notation.</p>
 
-<p>If programming classes gave a better context for a language, such as why one over the other, what they excel at, and why they were introduced, I would gain a stronger understanding of the field. Hello World and similarly elementary programs such as our assignments can be coded in any language, which mystifies the role of language and the overarching role of computer science.</p>
+<p>Binary trees are trees with an arity of 2. Each node has at most two children. This rigidity in structure allows for a few cool functionalities, namely for sorting and traversal.</p>
+
+<p>Because each node can have at most two children, the <code>children</code> attribute of a binary tree is not a list of binary trees, but rather two separate fields for <code>left_child</code> and <code>right_child</code>. This way, a leaf node has both children as <code>None</code>, rather than an empty list. This makes traversal slightly different, but nice in that it makes computation time more predictable given a tree of certain height.</p>
+
+<p>To apply binary trees, there was a lab activity regarding Reverse Polish notation, an alternative to infix notation for arithmetic. RPN works as follows:</p>
+
+<p>(+ 7 9) is equivalent to (7 + 9)
+(- + 7 9 3) is equivalent to (7 + 9 - 3)</p>
+
+<p>As a summary, RPN works by moving the operator to the position before the arguments, as opposed to between them. This allows for long strings of arithmetic to be expressed without parentheses.</p>
+
+<p>Binary trees are also vital for operations like binary sorting. Each node is organized so that its left child value is less than it, and its right child value is more than it. Binary trees are useful because they can reduce search time from O(n) to O(log n), with proper balancing, which will be discussed in the coming weeks.</p>
 
       </div>
     </div>

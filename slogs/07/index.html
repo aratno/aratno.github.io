@@ -114,22 +114,23 @@
 
     <div class="page-content">
       <div class="container">
-        <h3 id="slog-6-impressions-of-week-7"><code>SLOG 6: Impressions of Week 7</code></h3>
+        <h1 id="slog-7-week-8">SLOG 7: Week 8</h1>
 
-<p>This week, we spoke about a specific type of tree: the linked list. Linked lists are interesting for a couple reasons. First of all, they are a cool new take on arrays. Second, they are unary trees.</p>
+<p>This week we discussed linked lists, and how they sit between array and tree structures. They are a one dimensional collection of items, so each item has an “index”, and the length of the list is equal to the number of items in the list. They are also trees of arity 1, where each node has a maximum of one child. These two definitions correspond to the iterative and recursive ways to think about linked lists. Below are diagrams of each definition:</p>
 
-<p>There are two perspectives one can take when considering a linked list. The list can be thought of as iterative or as recursive. In the iterative case, each element points to its partner like a group of children blaming each other for a wrongdoing. The recursive definition is that the data of each node in the list includes reference to another list.</p>
+<pre><code>#The iterative perspective:
+[a] =&gt; [b] =&gt; [c] =&gt; [d] =&gt; None
 
-<p><em>The iterative perspective:</em>
-[a] =&gt; [b] =&gt; [c] =&gt; [d] =&gt; None</p>
-
-<p><em>The recursive perspective</em>
+#The recursive perspective
 a = [b, c, d]
 b = [c, d]
 c = d
-d = None</p>
+d = None
+</code></pre>
 
 <p>At this point, I have little understanding of why one would use a linked list in preference to an array. If I think about a linked list as a decision tree for a world without free will, it makes a little bit of melancholy sense.</p>
+
+<p><strong>EDIT</strong>: After doing some reading on the C language, the value in linked lists becomes much more apparent to me. Thinking about primitive data types, it becomes clear that linked lists are much more barebones versions of lists, they contain two pieces of data, one of the type of your choice, and another that points to the next piece. It isn’t easy to make a collection simpler than that.</p>
 
       </div>
     </div>

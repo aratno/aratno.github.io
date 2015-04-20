@@ -114,19 +114,76 @@
 
     <div class="page-content">
       <div class="container">
-        <p>This is an article.</p>
+        <h1 id="slog-8-week-9">SLOG 8: Week 9</h1>
 
-<p>I can add all sorts of things.</p>
+<p>This week we learned about manipulating Binary Search Trees (BSTs). BSTs are Binary Trees in which the children are organized such that a node’s left child value is less than the node’s value and the node’s right child value is more than the node’s value. If a BST is flattened into a list using in in-order traversal, the list will be in order.</p>
 
-<p><em>words like this</em>
-<strong>words like this</strong>
-<strong><em>words like this</em></strong></p>
+<p>Below is an example for a BST:</p>
+<pre>
+         10
+       /    \
+      8      13
+     / \    /  \
+    1   9  11  16
+</pre>
+<p>After the in-order traversal, the list would become:</p>
+<pre>
+[1, 8, 9, 10, 11, 13, 16]
+</pre>
 
-<p><a href="http://www.aber.io">links to things.</a></p>
+<p>which has ascending sorted values.</p>
 
-<p>kasra</p>
+<p>We also talked about inserting and deleting nodes into BSTs, which is more complicated than it seems because BSTs have a rigorous structure which needs to be upheld even when manipulating the data underlying it.</p>
 
-<p>arkady and kasra</p>
+<p>Insert and delete are fundamental methods to BSTs, so I will write about them here.</p>
+
+<p>Suppose we had the tree above, and we wanted to insert the value <strong>12</strong> into it. Here are the steps we would follow:
+1. Start at the node value, 10.
+2. 12 &gt; 10, so check the right child of the node.
+## 12 &lt; 13, so check the left child of the node.
+4. We are now at the leaf node with a value of 11.
+5. Copy the subtree (here just a leaf node) with 11 at the root and store it in a temp variable.
+6. Replace the subtree with our value, 12.
+7. Because the 11 subtree is less than 12, place the 11 subtree (in temp) as the left child of our new 12 node.</p>
+
+<p>Here is our new tree:</p>
+<pre>
+          10
+       /      \
+      8        13
+    /  \      /  \
+   1    9   12    16
+           /
+         11
+</pre>
+
+<p>And inversely, here are the steps to delete the node with the value <strong>13</strong>:
+1. First, navigate to the 13 node.
+2. Store the left and right children of the 13 node in <code>left_child</code> and <code>right_child</code>, respectively. In this case, <code>left_child</code> would be [11, 12] and <code>right_child</code> would be [16].
+3. Delete the 13 subtree.
+4. Let the right child of the node above the deleted node (in this case the 10 node) be <code>left_child</code>.
+5. Now parse the tree for where to place <code>right_child</code> (using the insert method mentioned before).</p>
+
+<p>One important thing to remember about BSTs is that they are not unique representations of a list. For example, the list [1, 2, 3, 4, 5] can be represented as:</p>
+
+<p>1
+ \
+  2
+   \
+    3
+     \
+      4
+       \
+        5</p>
+
+<p>Or it can be represented as:</p>
+
+<pre><code>   3
+ /   \
+2     4    /       \   1         5
+</code></pre>
+
+<p>For now, it is important to understand that these are both valid BSTs for our list, but one is more optimized than the other because it has a lesser height.</p>
 
       </div>
     </div>
