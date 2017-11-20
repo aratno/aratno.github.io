@@ -1,36 +1,24 @@
+/* Mobile */
+@media (max-width: 800px) {
+  html { font-size: 28px; }
+}
+
+/* Other (desktop) */
+@media (all) {
+  html { font-size: 16px; }
+}
+
 body {
   background-color: white;
   font-family: sans-serif;
+  padding: 1rem 1rem;
   position: fixed;
-  width: 100%;
 }
 
-h1 {
-  position: relative;
-  width: 160px;
-  margin-left: -80px;
-  left: 50%;
-
-  font-size: 18px;
+body > h1 {
+  font-size: 1.2rem;
 }
 
-p {
-  position: relative;
-  width: 170px;
-  margin-left: -85px;
-  left: 50%;
-
-  font-size: 16px;
-}
-
-.joost img {
-  position: relative;
-  width: 300px;
-  margin-left: -150px;
-
-  left: 50%;
-
-  /* Image has transparent padding, spacing needs some manual adjustment */
-  top: -15px;
-  margin-bottom: -30px;
+body > p {
+  font-size: 1rem;
 }
