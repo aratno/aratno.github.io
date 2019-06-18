@@ -2,7 +2,7 @@
     "name": "client",
     "scripts": {
         "build": "NODE_ENV=production webpack",
-        "dev": "webpack-dev-server"
+        "dev": "webpack-dev-server --history-api-fallback=true"
     },
     "dependencies": {
         "css-loader": "^2.1.1",
